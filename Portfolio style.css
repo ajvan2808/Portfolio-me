@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://wallpaperaccess.com/full/1198665.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-stretch: expanded;
+    line-height: 1.5;
+    color: rgb(245, 245, 248);
+
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(26, 22, 29, 0.9);
+    text-align: justify;
+}
+
+@media (max-width: 560px) {
+    #navbar {
+        width: 100%;
+    }
+}
+
+#navbar > ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#navbar li {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+#navbar a {
+    text-decoration: none;
+    text-shadow: rgba(26, 22, 29, 0.9);
+    color: rgb(190, 190, 223);
+    justify-content: space-around;
+}
+
+@media (max-width: 340px) {
+    #navbar > ul, li {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 0.5;
+    color: rgb(217, 217, 240);
+}
+
+@media (max-width: 830px) {
+    #welcome-section > p, h1 {
+        word-wrap: break-word;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 300px) {
+    #welcome-section > p, h1 {
+        font-size: 12px;
+    }
+}
+
+#projects {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; */
+    margin: 20px;
+    /* height: 100%; */
+    /* height: 300vh; */
+}
+
+.project-grid {
+    display: block;
+    /* flex-direction: column;
+    align-items: center; */
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    margin: 0 auto 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.project-grid > iframe {
+    border: 2px solid rgba(19, 6, 77, 0.5);
+    border-radius: 5px;
+}
+
+@media (max-width: 830px) {
+    #projects {
+        width: 100%;
+    }
+}
+
+#Contact {
+    height: 20vh;
+    padding-top: 10vh;
+   
+}
+#profile-link {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#profile-link a {
+    text-decoration: none;
+    color: rgb(115, 185, 226); 
+    font-weight: 500;
+    font: bold;
+    background-color: rgba(50, 34, 71, 0.6);
+}
+
+@media (max-width: 280px) {
+    #profile-link {
+    display: flex;
+    flex-direction: column;
+    }
+}
